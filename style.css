@@ -1,6 +1,19 @@
-* {
+body {
+  background-color: lightgray;
   color: darkred;
 }
+
 h1, h2 {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+p, ul {
+  color: darkblue;
+  line-height: 1.4em;
+}
+
+.code {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  background-color: black;
+  color: green;
 }
