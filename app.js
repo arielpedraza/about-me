@@ -11,35 +11,39 @@ if (answer1.toUpperCase() === 'N' || answer1.toUpperCase() === 'NO'){
 }
 
 var answer2 = prompt('Do I have a twin?');
-console.log('Do I have a twin?: ');
+console.log('Do I have a twin?: ' + answer2);
 if (answer2.toUpperCase() === 'Y' || answer2.toUpperCase() === 'YES'){
   score++;
 }
 
 var answer3 = prompt('Do I like playing video games?');
-console.log('Do I like playing video games? ');
+console.log('Do I like playing video games? ' + answer3);
 if (answer3.toUpperCase() === 'Y' || answer3.toUpperCase() === 'YES'){
   score++;
 }
 
 var answer4 = prompt('Was I born in the PNW?');
-console.log('Was I born in the PNW? ');
+console.log('Was I born in the PNW? ' + answer4);
 if (answer4.toUpperCase() === 'N' || answer4.toUpperCase() === 'NO'){
   score++;
 }
 
 var answer5 = prompt('Did I serve in the Air Force?');
-console.log('Did I serve in the Air Force? ');
+console.log('Did I serve in the Air Force? ' + answer5);
 if (answer5.toUpperCase() === 'Y' || answer5.toUpperCase() === 'YES'){
   score++;
 }
 
 if (score === 5){
   alert('WOW, how did you know all that... are you spying on me!?!?');
+  console.log('WOW, how did you know all that... are you spying on me!?!?');
 }else if (score >= 3){
   alert('You know some things about me... care to know more?');
+  console.log('You know some things about me... care to know more?');
 }else if (score > 0){
   alert('You barely know anything about me... do you not care?');
+  console.log('You barely know anything about me... do you not care?');
 }else{
   alert('Stranger danger!!!');
+  console.log('Stranger danger!!!');
 }
