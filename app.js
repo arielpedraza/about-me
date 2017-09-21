@@ -98,15 +98,13 @@ do {
     }
   }
   if(!answerBool){
-    alert('Nope, haven\'t been there, try again.')
+    alert('Nope, haven\'t been there, try again. Guesses Remaining: ' + guessesLeft)
+    console.log('User answered incorrectly with: ' + answer);
+  }else{
+    alert('Correct! You got it right in ' + (6-guessesLeft) + ' guess(es). Score: ' + score + '/' + numOfQues);
+    console.log('User answered correctly with: ' + answer);
   }
 }while(!answerBool && guessesLeft > 0)
-if(answerBool === true){
-  alert('Correct! You got it right in ' + (6-guessesLeft) + ' guess(es). Score: ' + score + '/' + numOfQues);
-  console.log('User answered correctly with: ' + answer);
-}else{
-  console.log('User answered incorrectly with: ' + answer);
-}
 console.log('Score: ' + score + '/' + numOfQues);
 
 if (score > 5){
