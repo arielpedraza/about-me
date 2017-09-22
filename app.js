@@ -84,7 +84,7 @@ function guessingGame () {
     console.log('User guessed: ' + answer + ' with ' + guessesLeft + ' guesses left.');
     if (parseInt(answer) === 148){
       score++;
-      alert('Correct! I could never catch Tauros and Chancey (or Mew). You got it right in ' + (4-guessesLeft) + ' guess(es). Score: ' + score + '/' + numOfQues);
+      alert('Correct! I could never catch Tauros and Chancey (or Mew). You got it right in ' + (4 - guessesLeft) + ' guess(es). Score: ' + score + '/' + numOfQues);
       console.log('User answered correctly!');
     } else if (parseInt(answer) > 148){
       alert('Wrong, you guessed too high... Guesses left: ' + guessesLeft);
@@ -93,7 +93,7 @@ function guessingGame () {
       alert('Wrong, you guessed too low... Guesses left: ' + guessesLeft);
       console.log('User guessed too low');
     }
-  } while (parseInt(answer) !== 148 && guessesLeft > 0)
+  } while (parseInt(answer) !== 148 && guessesLeft > 0);
   console.log('Score: ' + score + '/' + numOfQues);
 }
 
@@ -111,13 +111,13 @@ function countryLivedGame () {
       }
     }
     if(!answerBool){
-      alert('Nope, haven\'t been there, try again. Guesses Remaining: ' + guessesLeft)
+      alert('Nope, haven\'t been there, try again. Guesses Remaining: ' + guessesLeft);
       console.log('User answered incorrectly with: ' + answer);
     }else{
-      alert('Correct! You got it right in ' + (6-guessesLeft) + ' guess(es). Score: ' + score + '/' + numOfQues);
+      alert('Correct! You got it right in ' + (6 - guessesLeft) + ' guess(es). Score: ' + score + '/' + numOfQues);
       console.log('User answered correctly with: ' + answer);
     }
-  }while(!answerBool && guessesLeft > 0)
+  }while(!answerBool && guessesLeft > 0);
   console.log('Score: ' + score + '/' + numOfQues);
 }
 
